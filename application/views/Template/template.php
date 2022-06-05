@@ -80,6 +80,10 @@
 									<div class="row">
 									</div>
 									<a href="<?php echo base_url() ?>index.php/auth/logout" class="btn btn-default btn-flat" style="text-align:center;">Sign out</a>
+									<br>
+									<div class="row">
+									</div>
+									<a href="<?php echo base_url() ?>katalog" class="btn btn-default btn-flat" style="text-align:center;">Laman Katalog</a>
 								</li>
 							</ul>
 						</li>
@@ -107,6 +111,13 @@
 				<?php if ($this->session->userdata('akses') == 1) : ?>
 				<ul class="sidebar-menu" data-widget="tree">
 					<li class="header">MAIN NAVIGATION</li>
+					<li>
+						<a href="<?php echo base_url() ?>dashboard">
+							<i class="fa fa-dashboard"></i> <span>DASHBOARD</span>
+							<span class="pull-right-container">
+							</span>
+						</a>
+					</li>
 					<li class="active treeview">
 						<a href="#">
 							<i class="fa fa-folder-o"></i> <span>MASTER DATA</span>
@@ -129,6 +140,13 @@
 					<li>
 						<a href="<?php echo base_url() ?>index.php/stok">
 							<i class="fa fa-cubes"></i> <span>STOK</span>
+							<span class="pull-right-container">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url() ?>index.php/penjualan">
+							<i class="fa fa-shopping-cart"></i> <span>PENJUALAN</span>
 							<span class="pull-right-container">
 							</span>
 						</a>
@@ -167,7 +185,7 @@
 			<div class="pull-right hidden-xs">
 				<b>Version</b> 2.4.7
 			</div>
-			<strong>Copyright &copy; 2020 <a href="#">Xie Tsun Zao</a>.</strong> All rights
+			<strong>Copyright &copy; 2021 <a href="#"></a>.</strong> All rights
 			reserved.
 		</footer>
 		<!-- /.control-sidebar -->

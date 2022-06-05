@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'kategori';
+$route['default_controller'] = 'katalog';
 $route['404_override'] = '';
 $route['penjualan'] = 'penjualan/store';
 $route['hapus_cart/(:any)'] = 'penjualan/hapus_cart/$1';
