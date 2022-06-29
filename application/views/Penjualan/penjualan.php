@@ -96,7 +96,7 @@
                                                                         <form action="<?= base_url('index.php/ubah_qty'); ?>" method="POST">
                                                                             <input type="hidden" id="idbrg" name="idbarang" value="<?= $items['id_barang']; ?>">
                                                                             <input type="hidden" name="rowid" value="<?= $items['rowid']; ?>">
-                                                                            <input type="number" class="total" max="500" min="0" value="<?= $items['qty']; ?>" name="qty" size="5">
+                                                                            <input type="number" class="total" max="<?= $items['qty']; ?>" min="<?= $items['qty']; ?>" value="<?= $items['qty']; ?>" name="qty" size="5">
                                                                             <button class="btn btn-primary btn-sm fa fa-check" style="display:none;" title="Simpan">
                                                                             </button>
                                                                         </form>
@@ -266,7 +266,7 @@
                                                         <p align="center"><label>Rp.<?= $this->fungsi->rupiah($row->harga); ?></label></p>
                                                     </div>
                                                     <div class="add">
-                                                        <a href="<?php echo base_url() . 'index.php/penjualan/tambah_barang/' . $row->id_barang . '/1' ?>" type="button" class="btn btn-danger my-cart-btn my-cart-b">Add to Cart</a>
+                                                        <a href="<?php echo base_url() . 'index.php/penjualan/tambah_barang/' . $row->id_barang . '/1' ?>" type="button" class="btn btn-danger my-cart-btn my-cart-b" max="">Add to Cart</a>
                                                     </div>
                                                 </div>
                                             </div>

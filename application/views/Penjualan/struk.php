@@ -76,7 +76,7 @@
                                 <div id="receipt-data">
                                     <div>
                                         <div style="text-align:center;">
-            
+                                            <img src="<?php echo base_url(); ?>assets/dist/img/bilbil.png" style="max-width:150px;" alt="BILBILWEST">
                                             <p style="text-align:center;"><strong>Simple POS</strong><br>jL. ABC123</p>
                                             <p></p>
                                         </div>

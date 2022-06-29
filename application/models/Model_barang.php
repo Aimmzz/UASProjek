@@ -12,6 +12,12 @@ class Model_barang extends CI_Model
 			->distinct()
 			->get('barang');
 	}
+	function tampil_barang()
+	{
+		return $this->db->get('barang');
+	}
+
+
 
 	function tampilkan_ukuran()
 	{
